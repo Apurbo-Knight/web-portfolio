@@ -107,10 +107,10 @@ footer p{
     font-size: 20px;
 
 }
-/* .link-button:hover{
+.link-button:hover{
     color: cyan;
     background-image: linear-gradient(45deg,blue, skyblue);
-} */
+}
 
 .link-button:visited{
     color: black;
@@ -125,3 +125,55 @@ img:hover{
 #noob{
     transition: box-shadow .5s ease;
 }
+
+
+/* RESPONSIVE NESS START */
+
+@media screen and (max-width:600px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+ .img-2{
+    visibility: hidden;
+ }
+    #pro{
+        margin-bottom: 50px ;
+        margin-left: 250px;
+    }
+    #noob{
+        margin-left: 250px;
+    }
+    img:hover{
+        height: 430px;
+        width: 430px;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 850px) {
+    .half-width img{
+        height: 300px;
+        width: 300px;
+    }
+    img:hover{
+        height: 330px;
+        width: 330px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .half-width img{
+        height: 400px;
+        width: 400px;
+    }
+    img:hover{
+        height: 500px;
+        width: 500px;
+    }
+}
+
